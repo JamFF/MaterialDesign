@@ -41,6 +41,10 @@
         <activity
             android:name=".core.VipActivity"
             android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".immersive.ImmersiveActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

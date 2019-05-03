@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".recycler.RecyclerViewFragment">
+    tools:context=".recyclerview.RecyclerViewFragment">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
@@ -38,7 +38,7 @@
             android:layout_height="wrap_content"
             android:background="@android:color/white">
 
-            <com.ff.material.recycler.CircleImageView
+            <com.ff.material.recyclerview.CircleImageView
                 android:id="@+id/iv_avatar"
                 android:layout_width="44dp"
                 android:layout_height="44dp"

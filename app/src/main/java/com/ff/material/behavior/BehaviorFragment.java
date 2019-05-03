@@ -16,7 +16,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.ff.material.R;
-import com.ff.material.recycler.FeedAdapter;
+import com.ff.material.recyclerview.FeedAdapter;
 import com.squareup.picasso.Picasso;
 
 import java.lang.ref.WeakReference;

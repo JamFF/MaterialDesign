@@ -1,4 +1,4 @@
-package com.ff.material.recycler;
+package com.ff.material.recyclerview;
 
 
 import android.os.Bundle;
@@ -40,7 +40,7 @@ public class RecyclerViewFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_recycler_view, container, false);
+        View view = inflater.inflate(R.layout.fragment_recyclerview, container, false);
 
         mRecyclerView = view.findViewById(R.id.recyclerView);
         mLayoutManager = new LinearLayoutManager(getContext());

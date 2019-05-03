@@ -5,6 +5,8 @@
         <item>MaterialDesign</item>
         <item>RecyclerView</item>
         <item>自定义Behavior</item>
+        <item>沉浸式</item>
+        <item>CardView</item>
     </array>
 
     <string name="title_home">Home</string>

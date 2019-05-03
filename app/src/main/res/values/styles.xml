@@ -58,4 +58,9 @@
         <item name="android:textSize">16sp</item>
     </style>
 
+    <style name="TranslucentStatusTheme" parent="AppTheme.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
 </resources>

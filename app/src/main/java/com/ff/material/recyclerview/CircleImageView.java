@@ -1,4 +1,4 @@
-package com.ff.material.recycler;
+package com.ff.material.recyclerview;
 
 import android.content.Context;
 import android.content.res.TypedArray;

@@ -10,8 +10,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
 import com.ff.material.behavior.BehaviorFragment;
+import com.ff.material.cardview.CardViewFragment;
 import com.ff.material.core.MaterialDesignActivity;
-import com.ff.material.recycler.RecyclerViewFragment;
+import com.ff.material.immersive.ImmersiveActivity;
+import com.ff.material.recyclerview.RecyclerViewFragment;
 
 public class MainActivity extends AppCompatActivity implements MainFragment.OnListItemClickListener {
 
@@ -44,8 +46,14 @@ public class MainActivity extends AppCompatActivity implements MainFragment.OnLi
             case 1:// 顶部悬浮条的RecyclerView
                 fragment = new RecyclerViewFragment();
                 break;
-            case 2:
+            case 2:// 自定义Behavior
                 fragment = new BehaviorFragment();
+                break;
+            case 3:// 沉浸式
+                startActivity(new Intent(this, ImmersiveActivity.class));
+                return;
+            case 4:// CardView
+                fragment = new CardViewFragment();
                 break;
             default:
                 return;
