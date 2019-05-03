@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/add"
+        android:icon="@drawable/ic_menu_camera"
+        android:title="add"
+        app:showAsAction="always" />
+    <!--显示，总显示在ToolBar上-->
+
+    <item
+        android:id="@+id/delete"
+        android:icon="@drawable/ic_menu_slideshow"
+        android:title="delete"
+        app:showAsAction="never" />
+    <!--隐藏，不显示在ToolBar上-->
+
+    <item
+        android:id="@+id/tb_setting"
+        android:icon="@drawable/ic_menu_manage"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="ifRoom" />
+    <!--如果有空间则显示在ToolBar上，否则隐藏-->
+</menu>
