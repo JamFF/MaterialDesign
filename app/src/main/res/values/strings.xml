@@ -3,7 +3,8 @@
 
     <array name="main_items">
         <item>MaterialDesign</item>
-        <item>自定义RecyclerView</item>
+        <item>RecyclerView</item>
+        <item>自定义Behavior</item>
     </array>
 
     <string name="title_home">Home</string>

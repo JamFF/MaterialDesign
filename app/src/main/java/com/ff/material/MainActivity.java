@@ -9,7 +9,9 @@ import android.widget.FrameLayout;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
+import com.ff.material.behavior.BehaviorFragment;
 import com.ff.material.core.MaterialDesignActivity;
+import com.ff.material.recycler.RecyclerViewFragment;
 
 public class MainActivity extends AppCompatActivity implements MainFragment.OnListItemClickListener {
 
@@ -39,19 +41,19 @@ public class MainActivity extends AppCompatActivity implements MainFragment.OnLi
             case 0:// MaterialDesign
                 startActivity(new Intent(this, MaterialDesignActivity.class));
                 return;
-            case 1:// 自定义RecyclerView
-//                fragment = new GooglePercentFragment();
+            case 1:// 顶部悬浮条的RecyclerView
+                fragment = new RecyclerViewFragment();
                 break;
             case 2:
-//                fragment = new MyPercentFragment();
+                fragment = new BehaviorFragment();
                 break;
             default:
                 return;
 
         }
-//        getSupportFragmentManager().beginTransaction()
-//                .replace(mRoot.getId(), fragment, fragment.getClass().getName())
-//                .addToBackStack(null)
-//                .commit();
+        getSupportFragmentManager().beginTransaction()
+                .replace(mRoot.getId(), fragment, fragment.getClass().getName())
+                .addToBackStack(null)
+                .commit();
     }
 }
