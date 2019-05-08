@@ -20,6 +20,7 @@ public class ImmersiveActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_immersive);
         immersive();
+        // 如果使用Toolbar，隐藏状态栏，Toolbar的位置会上移，所以需要增加该逻辑
         setHeightAndPadding(this, findViewById(R.id.toolbar));
     }
 
