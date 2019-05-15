@@ -116,5 +116,31 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
 #### 带 Toolbar 的沉浸式适配
 参考 ImmersiveActivity.java
 
+#### 沉浸式 RecyclerView
+参考 RecyclerViewActivity.java
+
+注意 android:fitsSystemWindows="true" 的使用，默认为false。  
+如果希望布局延伸到状态栏，默认 false 即可，如果不希望与状态栏重叠，则设置为 true。
+
+```xml
+<com.google.android.material.appbar.AppBarLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:fitsSystemWindows="true"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:title="toolbar" />
+
+</com.google.android.material.appbar.AppBarLayout>
+```
+注意：fitsSystemWindows 生效前提：当前页面没有标题栏，并且状态栏或者底部导航栏透明。
+
+[android:fitsSystemWindows属性](https://blog.csdn.net/alex01550/article/details/86521132)
+
 ## CardView
 参考 fragment_cardview.xml

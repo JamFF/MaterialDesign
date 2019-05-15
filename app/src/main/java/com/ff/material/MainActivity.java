@@ -13,6 +13,7 @@ import com.ff.material.behavior.BehaviorFragment;
 import com.ff.material.cardview.CardViewFragment;
 import com.ff.material.core.MaterialDesignActivity;
 import com.ff.material.immersive.ImmersiveActivity;
+import com.ff.material.recyclerview.RecyclerViewActivity;
 import com.ff.material.recyclerview.RecyclerViewFragment;
 
 public class MainActivity extends AppCompatActivity implements MainFragment.OnListItemClickListener {
@@ -52,7 +53,10 @@ public class MainActivity extends AppCompatActivity implements MainFragment.OnLi
             case 3:// 沉浸式
                 startActivity(new Intent(this, ImmersiveActivity.class));
                 return;
-            case 4:// CardView
+            case 4:// 沉浸式顶部悬浮条的RecyclerView
+                startActivity(new Intent(this, RecyclerViewActivity.class));
+                return;
+            case 5:// CardView
                 fragment = new CardViewFragment();
                 break;
             default:

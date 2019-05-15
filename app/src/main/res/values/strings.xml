@@ -6,6 +6,7 @@
         <item>RecyclerView</item>
         <item>自定义Behavior</item>
         <item>沉浸式</item>
+        <item>沉浸式RecyclerView</item>
         <item>CardView</item>
     </array>
 
