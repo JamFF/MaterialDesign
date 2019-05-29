@@ -45,6 +45,10 @@
         <activity
             android:name=".immersive.ImmersiveActivity"
             android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".recyclerview.RecyclerViewActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>
